@@ -1,14 +1,27 @@
 module.exports = {
-    extends: ['plugin:react/recommended', 'plugin:react/jsx-runtime'],
+    extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:react/recommended',
+        'plugin:react/jsx-runtime',
+        'plugin:prettier/recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:import/recommended',
+        'plugin:import/typescript',
+    ],
+    parser: '@typescript-eslint/parser',
     parserOptions: {
+        parser: '@typescript-eslint/parser',
+        project: ['./tsconfig.json'],
+        // project: null,
         tsconfigRootDir: __dirname,
-        project: './tsconfig.json',
         sourceType: 'module',
         ecmaFeatures: {
             jsx: true,
         },
     },
-    plugins: ['jsx-a11y'],
+    plugins: ['jsx-a11y', '@typescript-eslint'],
     env: {
         browser: true,
         commonjs: true,
@@ -16,6 +29,8 @@ module.exports = {
     globals: {
         React: true,
     },
+    ignorePatterns: ['.eslintrc.js'],
+    root: true,
     rules: {
         'no-empty-function': ['off'],
         'global-require': ['off'],
@@ -38,6 +53,7 @@ module.exports = {
         'import/prefer-default-export': ['off'],
         'arrow-body-style': ['error', 'as-needed'],
         'no-underscore-dangle': ['off'],
+        'no-unused-vars': 'off',
 
         'react/jsx-indent': ['error', 4],
         'react/jsx-indent-props': ['error', 4],
@@ -54,6 +70,8 @@ module.exports = {
 
         '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: true }],
         '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
+
+        // "@typescript-eslint/no-unused-vars": ["error"]
         '@typescript-eslint/no-empty-function': ['error'],
     },
     settings: {
