@@ -130,7 +130,6 @@ const Calculator = () => {
                             type="number"
                             placeholder="Input A"
                             required
-                            // step="0.0001"
                             onChange={handleInputsChange}
                         />
                     </div>
@@ -149,7 +148,6 @@ const Calculator = () => {
                             type="number"
                             placeholder="Input B"
                             required
-                            // step="0.0001"
                             onChange={handleInputsChange}
                         />
                     </div>

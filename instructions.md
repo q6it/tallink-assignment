@@ -43,7 +43,7 @@
         - compare which number A or B are highest //done
         - create a checkForPrime function = if number > 1, number % [2, ...oddNumbers] !== 0
           ( alternative check - Number.isInteger(number) === false) //done
-    8. handle floating numbers
+    8. handle floating numbers //done
     9. show error messages //done for divide and reminder
 
 4. Solve/simplify and add complexity on the go
@@ -52,6 +52,6 @@
 
 Requirements:
 
-1. build start readme
-2. repo
-3. tests
+1. build start readme //done
+2. Create a repo //done
+3. Write your first ever tests //done
