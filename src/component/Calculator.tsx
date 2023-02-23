@@ -83,7 +83,6 @@ const Calculator = () => {
                 }
 
                 const reminderResult = getReminder(inputs.a as number, inputs.b as number);
-                console.log('TCL: handleSubmit -> reminderResult', reminderResult);
 
                 setRows([
                     ...rows,

@@ -51,7 +51,7 @@ module.exports = {
         ],
         'prefer-destructuring': ['error', { object: true, array: false }],
         'import/prefer-default-export': ['off'],
-        'arrow-body-style': ['error', 'as-needed'],
+        'arrow-body-style': ['warn', 'as-needed'],
         'no-underscore-dangle': ['off'],
         'no-unused-vars': 'off',
 
