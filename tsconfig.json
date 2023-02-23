@@ -6,7 +6,7 @@
     "module": "ESNext",
     "moduleResolution": "Node",
 
-    "allowJs": false,
+    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
@@ -17,7 +17,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    "types": ["vite/client", "node"],
+    "types": ["vite/client", "node", "jest"],
 
     "outDir": "./dist",
     "baseUrl": "./",
@@ -27,5 +27,7 @@
     }
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "exclude": ["**/__tests__/**/*", "*.config.js"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "files": ["jest.config.js", "babel.config.js"]
 }

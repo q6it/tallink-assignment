@@ -29,7 +29,7 @@ module.exports = {
     globals: {
         React: true,
     },
-    ignorePatterns: ['.eslintrc.js'],
+    ignorePatterns: ['.eslintrc.js', '**/__tests__/**/*'],
     root: true,
     rules: {
         'no-empty-function': ['off'],
@@ -70,8 +70,6 @@ module.exports = {
 
         '@typescript-eslint/no-empty-interface': ['error', { allowSingleExtends: true }],
         '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
-
-        // "@typescript-eslint/no-unused-vars": ["error"]
         '@typescript-eslint/no-empty-function': ['error'],
     },
     settings: {

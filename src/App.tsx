@@ -1,9 +1,12 @@
+import Calculator from './component/Calculator';
+
 function App() {
     return (
         <div className="App">
-            <h1 className="text-center text-3xl font-bold underline">
-                React typescript tailwind vite boilerplate
+            <h1 className="mt-8 text-center text-3xl font-bold underline">
+                Tallink test assignment
             </h1>
+            <Calculator />
         </div>
     );
 }
