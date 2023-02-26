@@ -6,7 +6,7 @@ interface TableProps {
     error: string;
 }
 
-const Table = memo(({ rows, error }: TableProps) => (
+const Table = ({ rows, error }: TableProps) => (
     <div className="m-auto mt-24 flex w-1/2 flex-col">
         <div className="overflow-x-auto sm:mx-0.5 lg:mx-0.5">
             <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
@@ -71,6 +71,6 @@ const Table = memo(({ rows, error }: TableProps) => (
             </div>
         </div>
     </div>
-));
+);
 
-export default Table;
+export default memo(Table);
