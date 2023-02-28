@@ -1,12 +1,10 @@
-import { memo } from 'react';
-
 interface FormProps {
     handleSubmit: (e: React.SyntheticEvent) => void;
     handleInputsChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     handleOperationChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
-const Form = memo(({ handleSubmit, handleInputsChange, handleOperationChange }: FormProps) => (
+const Form = ({ handleSubmit, handleInputsChange, handleOperationChange }: FormProps) => (
     <form className="m-auto w-full max-w-lg" onSubmit={handleSubmit}>
         <div className="mb-6 flex flex-wrap">
             <div className="w-full pr-2 md:w-1/2">
@@ -86,6 +84,6 @@ const Form = memo(({ handleSubmit, handleInputsChange, handleOperationChange }: 
             </button>
         </div>
     </form>
-));
+);
 
 export default Form;
